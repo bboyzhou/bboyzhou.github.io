@@ -1029,9 +1029,15 @@
       
         
           
-            <div align="center"><br>2017.03.27<br></div><br>—<br>## Introduction to Chinese Text Detection and Recognition<br><br>Text detection in natural scene environment plays an important role in many computer vision applications.While existing text detection methods are focused on English characters,there is strong application demands on text detection in otherlanguages, such as Chinese.<br><br><br><br>As Chinese characters are much more complex than English characters, innovative and more efficient text detection techniques are required for Chinese texts<br><br>This week,Our group create the website and read some relevant papers to make a better understanding of our group project<br><br>—<br><div align="center"><br>2017.03.27<br></div>
+            <h2 id="Introduction-to-Chinese-Text-Detection-and-Recognition"><a href="#Introduction-to-Chinese-Text-Detection-and-Recognition" class="headerlink" title="Introduction to Chinese Text Detection and Recognition"></a>Introduction to Chinese Text Detection and Recognition</h2><div align="center"><br>2017.03.27<br></div>
 
-<h2 id="Overview-of-Chinese-Text-Detection-and-Recognition"><a href="#Overview-of-Chinese-Text-Detection-and-Recognition" class="headerlink" title="Overview of Chinese Text Detection and Recognition"></a>Overview of Chinese Text Detection and Recognition</h2><p>This week ,we have read some of papers that refer to chinese text detection.The one that interested us most   is a paper titled A Convolutional Neural Network-Based Chinese Text Detection Algorithm via text Struture Modeling. This paper presents a novel text detection algorithm for Chinese character based on a specific designed convolutional neural network(CNN).</p>
+<p>Text detection in natural scene environment plays an important role in many computer vision applications.While existing text detection methods are focused on English characters,there is strong application demands on text detection in otherlanguages, such as Chinese.</p>
+<p>As Chinese characters are much more complex than English characters, innovative and more efficient text detection techniques are required for Chinese texts</p>
+<p>This week,Our group create the website and read some relevant papers to make a better understanding of our group project</p>
+<hr>
+<h2 id="Overview-of-Chinese-Text-Detection-and-Recognition"><a href="#Overview-of-Chinese-Text-Detection-and-Recognition" class="headerlink" title="Overview of Chinese Text Detection and Recognition"></a>Overview of Chinese Text Detection and Recognition</h2><div align="center"><br>2017.03.27<br></div>
+
+<p>This week ,we have read some of papers that refer to chinese text detection.The one that interested us most   is a paper titled A Convolutional Neural Network-Based Chinese Text Detection Algorithm via text Struture Modeling. This paper presents a novel text detection algorithm for Chinese character based on a specific designed convolutional neural network(CNN).</p>
 <p><img src="http://onh9j7vum.bkt.clouddn.com/1.jpg" alt="fig 1-流程图"></p>
 <p>The CNN contains a text structure component detector layer,a spatial pyramid layer,and a multi-input-layer deep belief network(DBN).The CNN is pre-trained via a convolutional sparse auto-encoder,specifically designed for extracting complex features from chinese characters.In particular, the text structure component detectors enhance the accuracy and uniqueness of feature descriptors by extracting multiple text structure components in various ways. The spatial pyramid layer enhances the scale invariability of the CNN for detecting texts in multiple scales.Finally, the multi-input-layer DBN replaces the full connected layers in the CNN to ensure features from multiple scales are comparable.  </p>
 <p><img src="http://onh9j7vum.bkt.clouddn.com/2.png" alt="fig 2"></p>
@@ -1039,10 +1045,9 @@
 <p><img src="http://onh9j7vum.bkt.clouddn.com/4.png" alt="fig 3-算法"></p>
 <p>An unsupervised learning method,named convolutional spparse auto-encoder(CSAE),for complex and abstract Chinese texts.AS the availability of public scene Chinese text datasets is very limited, applying an unsupervised learning method to pretrain a CNN model is important in avoiding overfitting.  </p>
 <p>The third contribution is on the application of a spatial pyramid layer(SPL) and designing a multi-input-layer deep belief network(DBN) as the fully connected layer in the model. The SPL improves the scale invariability of CNN, which is vital to detect various scale texts in natural.With the multi-input-layer DBN, the scale features extracted by SPL and the text features extracted by TSCD can be combined effctively.   </p>
-<hr>
-<div align="center"><br>2017.04.03<br></div>
+<h2 id="HDevelop-based-Chinese-Text-Detection-and-Recognition"><a href="#HDevelop-based-Chinese-Text-Detection-and-Recognition" class="headerlink" title="HDevelop-based Chinese Text Detection and Recognition"></a>HDevelop-based Chinese Text Detection and Recognition</h2><div align="center"><br>2017.04.03<br></div>
 
-<h2 id="HDevelop-based-Chinese-Text-Detection-and-Recognition"><a href="#HDevelop-based-Chinese-Text-Detection-and-Recognition" class="headerlink" title="HDevelop-based Chinese Text Detection and Recognition"></a>HDevelop-based Chinese Text Detection and Recognition</h2><p>本周，我们利用HDevelop的软件实现了近一千种中文文字识别，在训练库中每个汉字有10种字体以提升识别精度。我们的算法处理过程主要包括图像灰度化、二值化、膨胀以及腐蚀。</p>
+<p>本周，我们利用HDevelop的软件实现了近一千种中文文字识别，在训练库中每个汉字有10种字体以提升识别精度。我们的算法处理过程主要包括图像灰度化、二值化、膨胀以及腐蚀。</p>
 <p>我们的实验表明对于纯文本图像的识别精度较高，但对自然背景下包含文本的图像识别精度就很差，原因是膨胀腐蚀算法对于含有背景噪声的文字区域提取不准确。</p>
 <p>我们下一步打算对图像先进行文字区域提取，然后对其进行膨胀腐蚀运算。</p>
 <p>下图是我们对纯文本图像的识别结果，图中的四个汉字都能识别出来</p>
