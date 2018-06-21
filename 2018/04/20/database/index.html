@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="简介慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
+<meta name="description" content="简介:慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
 <meta name="keywords" content="Database">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库基础笔记">
 <meta property="og:url" content="http://yoursite.com/2018/04/20/database/index.html">
 <meta property="og:site_name" content="TheBeat&#39;s Blog">
-<meta property="og:description" content="简介慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
+<meta property="og:description" content="简介:慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T07:00:36.272Z">
+<meta property="og:updated_time" content="2018-06-21T08:21:14.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库基础笔记">
-<meta name="twitter:description" content="简介慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
+<meta name="twitter:description" content="简介:慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记">
 
 
 
@@ -405,7 +405,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  791
+                  749
                 </span>
               
 
@@ -442,10 +442,12 @@
       
 
       
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记</p>
+        <blockquote>
+<p><strong>简介:</strong><br>慕课网《Google面试官亲授 升级Java面试》视频课程 数据库知识整理笔记</p>
+</blockquote>
 <a id="more"></a>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h2 id="1-数据库概述"><a href="#1-数据库概述" class="headerlink" title="1.数据库概述"></a><a href="#1">1.数据库概述</a></h2><h2 id="2-JOIN-amp-GROUP-BY"><a href="#2-JOIN-amp-GROUP-BY" class="headerlink" title="2.JOIN &amp; GROUP BY"></a><a href="#2">2.JOIN &amp; GROUP BY</a></h2><h2 id="3-事物和乐观锁"><a href="#3-事物和乐观锁" class="headerlink" title="3.事物和乐观锁"></a><a href="#3">3.事物和乐观锁</a></h2><h2 id="4-数据库问题"><a href="#4-数据库问题" class="headerlink" title="4.数据库问题"></a><a href="#4">4.数据库问题</a></h2><hr>
-<h1 id="1-数据库概述-1"><a href="#1-数据库概述-1" class="headerlink" title=" 1. 数据库概述"></a><span id="1"> 1. 数据库概述</span></h1><h2 id="1-1-关系型数据库"><a href="#1-1-关系型数据库" class="headerlink" title="1.1 关系型数据库"></a>1.1 关系型数据库</h2><ul>
+<hr>
+<h1 id="数据库概述"><a href="#数据库概述" class="headerlink" title="数据库概述"></a>数据库概述</h1><h2 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a>关系型数据库</h2><ul>
 <li><p>基于关系代数理论</p>
 </li>
 <li><p>缺点：表结构不直观，实现复杂，速度慢</p>
@@ -453,7 +455,7 @@
 <li><p>优点：健壮性高，社区庞大</p>
 </li>
 </ul>
-<h1 id="2-JOIN-amp-GROUP-BY-1"><a href="#2-JOIN-amp-GROUP-BY-1" class="headerlink" title=" 2. JOIN &amp; GROUP BY"></a><span id="2"> 2. JOIN &amp; GROUP BY</span></h1><h3 id="1-2-1-JOIN"><a href="#1-2-1-JOIN" class="headerlink" title="1.2.1 JOIN"></a>1.2.1 JOIN</h3><p><strong>用法：</strong></p>
+<h1 id="JOIN-amp-GROUP-BY"><a href="#JOIN-amp-GROUP-BY" class="headerlink" title="JOIN &amp; GROUP BY"></a>JOIN &amp; GROUP BY</h1><h2 id="JOIN"><a href="#JOIN" class="headerlink" title="JOIN"></a>JOIN</h2><p><strong>用法：</strong></p>
 <p>table1 <strong>join</strong> table2 (笛卡尔积)</p>
 <p><strong>on</strong> table1.字段=table2.字段 (条件选择)</p>
 <p><strong>功能：</strong></p>
@@ -479,7 +481,7 @@
 <blockquote>
 <p><strong>where条件</strong>：提取那些满足指定标准的记录</p>
 </blockquote>
-<h3 id="1-2-2-GROUP-BY"><a href="#1-2-2-GROUP-BY" class="headerlink" title="1.2.2 GROUP BY"></a>1.2.2 GROUP BY</h3><p><strong>用法：</strong></p>
+<h2 id="GROUP-BY"><a href="#GROUP-BY" class="headerlink" title="GROUP BY"></a>GROUP BY</h2><p><strong>用法：</strong></p>
 <p>GROUP BY 字段:结合聚合函数 根据字段值分组（根据字段分组）</p>
 <p><strong>功能：</strong></p>
 <p>结合聚合函数，根据一个或多个列对结果集进行分组。</p>
@@ -492,7 +494,7 @@
 <p>  可以在SELECT，INSERT，UPDATE使用,返回将被用于在主查询作为条件的数据，以进一步限制要检索的数据</p>
 </li>
 </ul>
-<h1 id="3-事物和乐观锁-1"><a href="#3-事物和乐观锁-1" class="headerlink" title=" 3. 事物和乐观锁"></a><span id="3"> 3. 事物和乐观锁</span></h1><h2 id="2-1-事物的特性"><a href="#2-1-事物的特性" class="headerlink" title="2.1 事物的特性"></a>2.1 事物的特性</h2><p>ACID</p>
+<h1 id="事物和乐观锁"><a href="#事物和乐观锁" class="headerlink" title="事物和乐观锁"></a>事物和乐观锁</h1><h2 id="事物的特性"><a href="#事物的特性" class="headerlink" title="事物的特性"></a>事物的特性</h2><p><strong>ACID:</strong></p>
 <ul>
 <li><p>Atomicity</p>
 <p>  事物要么不做 要么做完</p>
@@ -507,7 +509,7 @@
 <p>  事物结果的持续性</p>
 </li>
 </ul>
-<h2 id="2-2-事物的隔离级别"><a href="#2-2-事物的隔离级别" class="headerlink" title="2.2 事物的隔离级别"></a>2.2 事物的隔离级别</h2><ul>
+<h2 id="事物的隔离级别"><a href="#事物的隔离级别" class="headerlink" title="事物的隔离级别"></a>事物的隔离级别</h2><ul>
 <li><p>Read uncommitted</p>
 <p>  未committed时 数据就可读取更新值    </p>
 </li>
@@ -523,7 +525,7 @@
 </ul>
 <p>一般情况下，隔离级别不需要那么高 。 比如在Read Committed下 ,读上加锁：<strong>select</strong> 后加 <strong>for update</strong>  加锁 （悲观锁）</p>
 <p><strong>缺点：</strong>系统开销大，浪费资源，由此引入乐观锁。</p>
-<h2 id="3-乐观锁"><a href="#3-乐观锁" class="headerlink" title=" 3. 乐观锁"></a><span id="3"> 3. 乐观锁</span></h2><p>不加transaction保护，而是加版本保护</p>
+<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>不加transaction保护，而是加版本保护</p>
 <p><strong>update</strong> ‘表名’ <strong>set</strong> ‘属性名’=？ <strong>where</strong>  条件=？ <strong>and</strong> ‘属性名’=？(版本保护)</p>
 <p>乐观锁演示</p>
 <ul>
@@ -532,7 +534,7 @@
 <li>检查和提交数据</li>
 </ul>
 <p>适用冲突不多的情况（因为数据库读取比较慢）</p>
-<h2 id="4-数据库的常见问题"><a href="#4-数据库的常见问题" class="headerlink" title=" 4. 数据库的常见问题"></a><span id="4"> 4. 数据库的常见问题</span></h2><ul>
+<h2 id="数据库的常见问题"><a href="#数据库的常见问题" class="headerlink" title="数据库的常见问题"></a>数据库的常见问题</h2><ul>
 <li><p>介绍关系数据库的理论基础</p>
 <p>  关系代数 ：1-5 范式</p>
 </li>
@@ -788,7 +790,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">2.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-数据库概述"><span class="nav-number">2.1.</span> <span class="nav-text">1.数据库概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JOIN-amp-GROUP-BY"><span class="nav-number">2.2.</span> <span class="nav-text">2.JOIN &amp; GROUP BY</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-事物和乐观锁"><span class="nav-number">2.3.</span> <span class="nav-text">3.事物和乐观锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-数据库问题"><span class="nav-number">2.4.</span> <span class="nav-text">4.数据库问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-数据库概述-1"><span class="nav-number">3.</span> <span class="nav-text"> 1. 数据库概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-关系型数据库"><span class="nav-number">3.1.</span> <span class="nav-text">1.1 关系型数据库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-JOIN-amp-GROUP-BY-1"><span class="nav-number">4.</span> <span class="nav-text"> 2. JOIN &amp; GROUP BY</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-JOIN"><span class="nav-number">4.0.1.</span> <span class="nav-text">1.2.1 JOIN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-GROUP-BY"><span class="nav-number">4.0.2.</span> <span class="nav-text">1.2.2 GROUP BY</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-事物和乐观锁-1"><span class="nav-number">5.</span> <span class="nav-text"> 3. 事物和乐观锁</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-事物的特性"><span class="nav-number">5.1.</span> <span class="nav-text">2.1 事物的特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-事物的隔离级别"><span class="nav-number">5.2.</span> <span class="nav-text">2.2 事物的隔离级别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-乐观锁"><span class="nav-number">5.3.</span> <span class="nav-text"> 3. 乐观锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-数据库的常见问题"><span class="nav-number">5.4.</span> <span class="nav-text"> 4. 数据库的常见问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库概述"><span class="nav-number">1.</span> <span class="nav-text">数据库概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系型数据库"><span class="nav-number">1.1.</span> <span class="nav-text">关系型数据库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JOIN-amp-GROUP-BY"><span class="nav-number">2.</span> <span class="nav-text">JOIN &amp; GROUP BY</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JOIN"><span class="nav-number">2.1.</span> <span class="nav-text">JOIN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GROUP-BY"><span class="nav-number">2.2.</span> <span class="nav-text">GROUP BY</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事物和乐观锁"><span class="nav-number">3.</span> <span class="nav-text">事物和乐观锁</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#事物的特性"><span class="nav-number">3.1.</span> <span class="nav-text">事物的特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事物的隔离级别"><span class="nav-number">3.2.</span> <span class="nav-text">事物的隔离级别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乐观锁"><span class="nav-number">3.3.</span> <span class="nav-text">乐观锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库的常见问题"><span class="nav-number">3.4.</span> <span class="nav-text">数据库的常见问题</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -823,7 +825,7 @@
     
       <span class="post-meta-item-text">站点总字数&#58;</span>
     
-    <span title="站点总字数">6.5k</span>
+    <span title="站点总字数">6.2k</span>
   
 </div>
 
