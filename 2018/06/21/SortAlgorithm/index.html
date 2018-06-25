@@ -99,9 +99,9 @@
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/QuickSort2Ways.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/QuickSort3Ways.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/Heap.png">
-<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort1.png">
-<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort2.png">
-<meta property="og:updated_time" content="2018-06-25T02:54:21.213Z">
+<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort_1.png">
+<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort_2.png">
+<meta property="og:updated_time" content="2018-06-25T03:07:06.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序算法总结(Java语言版)">
 <meta name="twitter:description" content="简介：从基本的O(n^2)时间复杂度的冒泡排序、选择排序、插入排序以及希尔排序到高级的O(nlogn)时间复杂度的归并排序、快速排序、堆排序。分析各个算法的时间复杂度，空间复杂度等。">
@@ -585,7 +585,7 @@
 <h2 id="七、堆排序-HeapSort"><a href="#七、堆排序-HeapSort" class="headerlink" title="七、堆排序(HeapSort)"></a>七、堆排序(HeapSort)</h2><h3 id="基本思想-6"><a href="#基本思想-6" class="headerlink" title="基本思想"></a>基本思想</h3><p>将待排序序列构造成一个最大堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了</p>
 <h3 id="过程-6"><a href="#过程-6" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>构造初始堆。将给定无序序列构造成一个最大堆，动态建堆-（参考基础堆排序以及优化堆排序代码）和静态建堆（参考原地堆排序）<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/Heap.png" alt="建堆"></li>
-<li>将堆顶元素与末尾元素进行交换，使末尾元素最大。然后继续调整堆，再将堆顶元素与末尾元素交换，得到第二大元素。如此反复进行交换、重建、交换。<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort1.png" alt="原地堆排序"><br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort2.png" alt="原地堆排序"></li>
+<li>将堆顶元素与末尾元素进行交换，使末尾元素最大。然后继续调整堆，再将堆顶元素与末尾元素交换，得到第二大元素。如此反复进行交换、重建、交换。<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort_1.png" alt="原地堆排序"><br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort_2.png" alt="原地堆排序"></li>
 </ol>
 <h3 id="算法分析-5"><a href="#算法分析-5" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
 <li><p>平均时间复杂度：O(nlogn)</p>
