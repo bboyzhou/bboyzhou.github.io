@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="TheBeat&#39;s Blog">
 <meta property="og:description" content="简介：从基本的O(n^2)时间复杂度的冒泡排序、选择排序、插入排序以及希尔排序到高级的O(nlogn)时间复杂度的归并排序、快速排序、堆排序。分析各个算法的时间复杂度，空间复杂度等。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithmAlgorithmCom.jpg">
+<meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/AlgorithmCom.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/BubbleSort.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/SelectionSort.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/InsertionSort.jpg">
@@ -100,11 +100,11 @@
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/QuickSort3Ways.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/Heap.jpg">
 <meta property="og:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort.jpg">
-<meta property="og:updated_time" content="2018-06-25T01:49:26.159Z">
+<meta property="og:updated_time" content="2018-06-25T02:16:14.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序算法总结(Java语言版)">
 <meta name="twitter:description" content="简介：从基本的O(n^2)时间复杂度的冒泡排序、选择排序、插入排序以及希尔排序到高级的O(nlogn)时间复杂度的归并排序、快速排序、堆排序。分析各个算法的时间复杂度，空间复杂度等。">
-<meta name="twitter:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithmAlgorithmCom.jpg">
+<meta name="twitter:image" content="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/AlgorithmCom.jpg">
 
 
 
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,283
+                  4,280
                 </span>
               
 
@@ -459,13 +459,14 @@
 </blockquote>
 <a id="more"></a>
 <hr>
-<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithmAlgorithmCom.jpg" alt="排序算法比较"></p>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/AlgorithmCom.jpg" alt="排序算法比较"></p>
 <h1 id="基本排序算法"><a href="#基本排序算法" class="headerlink" title="基本排序算法"></a>基本排序算法</h1><h2 id="一、冒泡排序-BubbleSort"><a href="#一、冒泡排序-BubbleSort" class="headerlink" title="一、冒泡排序(BubbleSort)"></a>一、冒泡排序(BubbleSort)</h2><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>相邻两个元素比较大小，大的元素下沉，小的元素上浮</p>
 <h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>从前往后比较相邻两个元素，如果后面的元素小，则交换位置，遍历完数组，最大元素将被放在数组尾部。</li>
-<li>重复上述循环，遍历数组第1到n-i(i=1,2,…n-2)个元素，依次将第2,3,…,n-1大的元素放在数组尾部，循环结束，最小的元素自然就在数组头部。<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/BubbleSort.jpg" alt="冒泡排序"><h3 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h3></li>
+<li>重复上述循环，遍历数组第1到n-i(i=1,2,…n-2)个元素，依次将第2,3,…,n-1大的元素放在数组尾部，循环结束，最小的元素自然就在数组头部。</li>
 </ol>
-<ul>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/BubbleSort.jpg" alt="冒泡排序"></p>
+<h3 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
 <li><p>平均时间复杂度：O(n^2)</p>
 <p>  <strong>推导：</strong>外层循环n-1次 ,内层循环n-i-1(i=0,1,2,…n-2)次,故时间复杂度为： (n-1)+(n-2)+…1=(n-1)n/2=O(n^2)</p>
 </li>
@@ -481,13 +482,12 @@
 <h2 id="二、选择排序-SelectionSort"><a href="#二、选择排序-SelectionSort" class="headerlink" title="二、选择排序(SelectionSort)"></a>二、选择排序(SelectionSort)</h2><h3 id="基本思想-1"><a href="#基本思想-1" class="headerlink" title="基本思想"></a>基本思想</h3><p>每次选择未排好序中最小的元素与当前未排好序的第一个元素交换位置，不断遍历，直到整个数组有序</p>
 <h3 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>从前往后遍历整个数组，找到最小的那个元素，并与第1个元素交换位置</li>
-<li>重复上述过程，遍历数组中第i(i=2,3,…n-1)个到第n个元素，找到其中最小的元素与第i个元素交换位置<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/SelectionSort.jpg" alt="选择排序"></li>
+<li>重复上述过程，遍历数组中第i(i=2,3,…n-1)个到第n个元素，找到其中最小的元素与第i个元素交换位置</li>
 </ol>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/SelectionSort.jpg" alt="选择排序"></p>
 <h3 id="算法分析-1"><a href="#算法分析-1" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
-<li>平均时间复杂度：O(n^2)</li>
-</ul>
-<p>推导略</p>
-<ul>
+<li><p>平均时间复杂度：O(n^2)</p>
+</li>
 <li><p>空间复杂度：O(1)</p>
 </li>
 <li><p>稳定排序</p>
@@ -499,8 +499,9 @@
 <h2 id="三、插入排序-InsertionSort"><a href="#三、插入排序-InsertionSort" class="headerlink" title="三、插入排序(InsertionSort)"></a>三、插入排序(InsertionSort)</h2><h3 id="基本思想-2"><a href="#基本思想-2" class="headerlink" title="基本思想"></a>基本思想</h3><p>从前往后访问数组元素，每次保证所访问元素插入到之前数组的合适位置。</p>
 <h3 id="过程-2"><a href="#过程-2" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>第2个元素与第1个元素比较大小，如果比第1个元素小，则交换两个元素位置</li>
-<li>访问第i(i=3,4,….n)个元素，将该元素插入到前面数组中的合适位置，访问完数组所有元素，则排序完成<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/InsertionSort.jpg" alt="插入排序"></li>
+<li>访问第i(i=3,4,….n)个元素，将该元素插入到前面数组中的合适位置，访问完数组所有元素，则排序完成</li>
 </ol>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/InsertionSort.jpg" alt="插入排序"></p>
 <h3 id="算法分析-2"><a href="#算法分析-2" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
 <li><p>平均时间复杂度：O(n^2)</p>
 </li>
@@ -515,8 +516,9 @@
 <h2 id="四、希尔排序-ShellSort"><a href="#四、希尔排序-ShellSort" class="headerlink" title="四、希尔排序(ShellSort)"></a>四、希尔排序(ShellSort)</h2><h3 id="基本思想-3"><a href="#基本思想-3" class="headerlink" title="基本思想"></a>基本思想</h3><p>给定增量序列，按照增量由大到小，直到增量为1，将数组依照增量序列分为k个序列，对所有序列进行插入排序。完成数组排序。</p>
 <h3 id="过程-3"><a href="#过程-3" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>对于最大增量m，对序列（1,1+m,…,1+k<em>m),…,(a,a+m,…,a+k</em>m),…, (n-km,n-(k-1)m,…,n)进行插入排序</li>
-<li>减小增量，重复上述过程，直到增量为1，对整个数组进行一次插入排序，使数组有序<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/ShellSort.jpg" alt="希尔排序"></li>
+<li>减小增量，重复上述过程，直到增量为1，对整个数组进行一次插入排序，使数组有序</li>
 </ol>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/ShellSort.jpg" alt="希尔排序"></p>
 <h3 id="算法分析-3"><a href="#算法分析-3" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
 <li><p>平均时间复杂度：</p>
 <p>  <strong>希尔增量</strong>( ht=[N/2]  hk=[hk-1 /2] )：<strong>O(n^2)</strong></p>
@@ -534,17 +536,16 @@
 <h1 id="高级排序算法"><a href="#高级排序算法" class="headerlink" title="高级排序算法"></a>高级排序算法</h1><h2 id="五、归并排序-MergeSort"><a href="#五、归并排序-MergeSort" class="headerlink" title="五、归并排序(MergeSort)"></a>五、归并排序(MergeSort)</h2><h3 id="基本思想-4"><a href="#基本思想-4" class="headerlink" title="基本思想"></a>基本思想</h3><p>先递归的分解数列:一分为二，二分为四…,最后再合并数列，完成归并过程。待归并完成后，数组排序完成</p>
 <h3 id="过程-4"><a href="#过程-4" class="headerlink" title="过程"></a>过程</h3><ol>
 <li>将数组从中间分为两部分，分别对左边右边数组进行归并排序，然后对两部分进行归并。</li>
-<li>归并过程，额外开辟大小为n的数组空间，将每一次归并的结果放入新的数组，从头到尾依次访问两部分数组元素，较小的元素优先进行归并操作<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/MergeSort.jpg" alt="归并排序"></li>
+<li>归并过程，额外开辟大小为n的数组空间，将每一次归并的结果放入新的数组，从头到尾依次访问两部分数组元素，较小的元素优先进行归并操作</li>
 </ol>
+<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/MergeSort.jpg" alt="归并排序"></p>
 <h3 id="算法复杂度分析"><a href="#算法复杂度分析" class="headerlink" title="算法复杂度分析"></a>算法复杂度分析</h3><ul>
-<li>平均时间复杂度：O(nlogn)</li>
-</ul>
-<p><strong>推导：</strong>数组不断对分，递归层数logn, 每层遍历n个数组元素。<br>故时间复杂度为nlogn</p>
-<ul>
-<li>空间复杂度：O(n)</li>
-</ul>
-<p>需要开辟和数组同样大小的空间n,放置归并操作的元素，<br>以及递归层数logn，占用栈空间.故空间复杂度为n+logn=O(n)</p>
-<ul>
+<li><p>平均时间复杂度：O(nlogn)</p>
+<p>  <strong>推导：</strong>数组不断对分，递归层数logn, 每层遍历n个数组元素。故时间复杂度为nlogn</p>
+</li>
+<li><p>空间复杂度：O(n)</p>
+<p>  需要开辟和数组同样大小的空间n,放置归并操作的元素，以及递归层数logn，占用栈空间.故空间复杂度为n+logn=O(n)</p>
+</li>
 <li><p>稳定排序</p>
 </li>
 <li><p>非原地排序</p>
@@ -567,10 +568,8 @@
 <li><p>平均时间复杂度：O(nlogn)</p>
 </li>
 <li><p>空间复杂度：O(logn)</p>
+<p>  递归层数平均为logn，占用栈空间</p>
 </li>
-</ul>
-<p>递归层数平均为logn，占用栈空间</p>
-<ul>
 <li><p>不稳定排序</p>
 </li>
 <li><p>原地排序</p>
@@ -584,13 +583,9 @@
 </code></pre><figure class="highlight java"><figcaption><span>QuickSort3Ways.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort3Ways</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T extends Comparable&lt;? <span class="keyword">super</span> T&gt;&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(T[] a)</span></span>&#123;</span><br><span class="line">        quickSort3Ways(a,<span class="number">0</span>,a.length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 对a[l...r]部分进行快速排序</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> &lt;T extends Comparable&lt;? <span class="keyword">super</span> T&gt;&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">quickSort3Ways</span><span class="params">(T[] a,<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(l&gt;=r)</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="comment">// partition</span></span><br><span class="line">        <span class="keyword">int</span> n=l+(<span class="keyword">int</span>)(Math.random()*(r-l+<span class="number">1</span>));</span><br><span class="line">        swap(a, l, n);</span><br><span class="line">        T v = a[l];</span><br><span class="line">        <span class="keyword">int</span> lt = l; <span class="comment">//a[l+1...lt]&lt;v</span></span><br><span class="line">        <span class="keyword">int</span> gt = r+<span class="number">1</span>; <span class="comment">//a[gt...r]&gt;v</span></span><br><span class="line">        <span class="keyword">int</span> i=l+<span class="number">1</span>; <span class="comment">// a[lt+1...i)==v</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (i&lt;gt) &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i].compareTo(v)&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                swap(a,i,lt+<span class="number">1</span>);</span><br><span class="line">                i++;</span><br><span class="line">                lt++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(a[i].compareTo(v)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                swap(a,i,gt-<span class="number">1</span>);</span><br><span class="line">                gt--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(a,l,lt);</span><br><span class="line">        lt--;</span><br><span class="line">        quickSort3Ways(a,l,lt);</span><br><span class="line">        quickSort3Ways(a,gt,r);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>&lt;T extends Comparable&lt;? <span class="keyword">super</span> T&gt;&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(T[] a,<span class="keyword">int</span> m,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        T temp=a[m];</span><br><span class="line">        a[m]=a[n];</span><br><span class="line">        a[n]=temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="七、堆排序-HeapSort"><a href="#七、堆排序-HeapSort" class="headerlink" title="七、堆排序(HeapSort)"></a>七、堆排序(HeapSort)</h2><h3 id="基本思想-6"><a href="#基本思想-6" class="headerlink" title="基本思想"></a>基本思想</h3><p>将待排序序列构造成一个最大堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了</p>
 <h3 id="过程-6"><a href="#过程-6" class="headerlink" title="过程"></a>过程</h3><ol>
-<li>构造初始堆。将给定无序序列构造成一个最大堆，动态建堆-（参考基础堆排序以及优化堆排序代码）和静态建堆（参考原地堆排序）</li>
+<li>构造初始堆。将给定无序序列构造成一个最大堆，动态建堆-（参考基础堆排序以及优化堆排序代码）和静态建堆（参考原地堆排序）<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/Heap.jpg" alt="建堆"></li>
+<li>将堆顶元素与末尾元素进行交换，使末尾元素最大。然后继续调整堆，再将堆顶元素与末尾元素交换，得到第二大元素。如此反复进行交换、重建、交换。<br><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort.jpg" alt="原地堆排序"></li>
 </ol>
-<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/Heap.jpg" alt="建堆"></p>
-<ol>
-<li>将堆顶元素与末尾元素进行交换，使末尾元素最大。然后继续调整堆，再将堆顶元素与末尾元素交换，得到第二大元素。如此反复进行交换、重建、交换。</li>
-</ol>
-<p><img src="http://onh9j7vum.bkt.clouddn.com/image/SortAlgorithm/HeapSort.jpg" alt="原地堆排序"></p>
 <h3 id="算法分析-5"><a href="#算法分析-5" class="headerlink" title="算法分析"></a>算法分析</h3><ul>
 <li><p>平均时间复杂度：O(nlogn)</p>
 </li>
